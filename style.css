@@ -1,0 +1,237 @@
+/* General Settings */
+body {
+  scroll-behavior: smooth;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  background-color: #BEC5AD; /* Light Olive */
+  color: #34252F; /* Dark Burgundy */
+}
+
+section {
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+/* Navbar */
+.navbar {
+  background-color: #3B5249; /* Deep Forest Green */
+}
+
+.navbar a {
+  color: #BEC5AD; /* Light Olive */
+}
+
+.navbar a:hover {
+  color: #A4B494; /* Light Sage */
+}
+
+.navbar-toggler-icon {
+  background-color: #A4B494; /* Light Sage */
+}
+
+/* Buttons */
+#btnLearnMore{
+   background-color: #519872;
+}
+
+#btnLearnMore:hover {
+    background-color: #376e51;
+ }
+
+.btn-primary {
+  background-color: #519872; /* Greenish */
+  border-color: #519872;
+}
+
+.btn-primary:hover {
+  background-color: #3B5249; /* Deep Forest Green */
+  border-color: #3B5249;
+}
+
+.btn-success {
+  background-color: #334224; /* Light Sage */
+  border-color: #334224;
+}
+
+.btn-warning {
+  background-color: #519872; /* Greenish */
+  border-color: #519872;
+}
+
+.btn-primary, .btn-success, .btn-warning {
+  color: #34252F; /* Dark Burgundy */
+}
+
+/* Section Titles */
+h1, h2, h3 {
+  color: #34252F; /* Dark Burgundy */
+}
+
+h5 {
+  color: #3B5249; /* Deep Forest Green */
+}
+
+/* Images */
+img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+/* Course Progression */
+#progression ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+#progression ul li {
+  margin: 10px 0;
+  color: #4f6e58; /* Dark Burgundy */
+}
+
+#progression{
+    background-color: #475032;
+}
+
+/* Accordion (FAQ) */
+.accordion-button:not(.collapsed){
+  background-color: #3B5249;
+  color: #BEC5AD;
+}
+
+.accordion-button {
+  font-weight: bold;
+  background-color: #3B5249; /* Deep Forest Green */
+  color: #BEC5AD; /* Light Olive */
+}
+
+.accordion-button:hover {
+  background-color: #519872; /* Greenish */
+  color: #34252F; /* Dark Burgundy */
+}
+
+.accordion-item {
+  border-color: #A4B494; /* Light Sage */
+}
+
+.accordion-body {
+  color: #34252F; /* Dark Burgundy */
+}
+
+/* Footer */
+footer {
+  background-color: #34252F; /* Dark Burgundy */
+  color: #BEC5AD; /* Light Olive */
+}
+  
+#divCourseProg{
+  font-size: 30px;
+}
+
+/* Slideshow styles */
+.slideshow-container {
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   z-index: -1; /* Keep it behind the content */
+   overflow: hidden;
+}
+  
+.mySlides {
+  display: none;
+}
+  
+.background-slide {
+   width: 100%;
+   height: 100%;
+   object-fit: cover; /* Make sure the image covers the section */
+}
+  
+.fade {
+  animation: fade 5s ease-in-out infinite;
+}
+  
+@keyframes fade {
+  0% { opacity: 0; }
+  20% { opacity: 1; }
+  60% { opacity: 1; }
+  80% { opacity: 0; }
+  100% { opacity: 0; }
+}
+
+.background-slide {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  opacity: 0.6;
+}
+
+.slideshow-container {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 0;
+}
+
+#mofuCarousel .carousel-item img {
+  width: 100; /* Ensures the image occupies the full width of the container */
+  max-height: 500px; /* Controls the maximum height of the images */
+  object-fit: cover; /* Ensures the image fills the container without distorting */
+}
+
+#mofu{
+  background-color: #2e3322;
+  display: none;
+  transition: all 0.5s ease;
+}
+
+#mofu.show {
+  display: block;
+}
+
+.modal.fade .modal-dialog {
+    transform: translateY(-100%);  /* Start position off-screen (above) */
+    transition: transform 0.5s ease-out, opacity 0.5s ease-out;  /* Customize the speed of the slide */
+}
+
+.modal.show .modal-dialog {
+    transform: translateY(0);  /* End position when modal is shown */
+    opacity: 1;  /* Ensure opacity is fully visible */
+}
+
+@media (max-width: 768px) {
+  #mofu .d-flex {
+    flex-direction: column !important;
+  }
+  #mofu .d-flex > div {
+    width: 100% !important;
+    margin-bottom: 20px;
+  }
+}
+
+#mofuCarousel .carousel-item img {
+  max-height: 400px;
+  object-fit: cover;
+}
+
+@media (max-width: 768px) {
+  #mofu .d-flex {
+    flex-direction: column !important;
+  }
+
+  #mofu .d-flex > div {
+    width: 100% !important;
+    margin-bottom: 20px;
+  }
+
+  #mofu h1 {
+    font-size: 40px;
+  }
+}

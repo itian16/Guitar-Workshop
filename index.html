@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Guitar Lesson Workshop</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="Images/TGW Logo white.png" type="image/x-icon">
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+      <a class="navbar-brand" href="#">The Guitar Workshop by Christian Ignacio</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link active" href="#ofu">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#mofu" id="learnMoreLink">Learn More</a>
+          <li class="nav-item"><a class="nav-link" href="#bofu">Join Now</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- OFU Section with Image Slideshow in Background -->
+   <section id="ofu" class="py-5 text-center bg-light" style="position: relative; height: 60vh; overflow: hidden;">
+    <!-- Slideshow Container -->
+    <div style="background-color: black;"class="slideshow-container">
+      <div class="mySlides fade">
+        <img src="Images/slide1.png" class="background-slide">
+      </div>
+      <div class="mySlides fade">
+        <img src="Images/slide2.png" class="background-slide">
+      </div>
+      <div class="mySlides fade">
+        <img src="images/slide3.png" class="background-slide">
+      </div>
+    </div>
+  
+    <!-- Parent Wrapper -->
+    <div style="position: relative; height: 55vh; display: flex; justify-content: center; align-items: center; z-index: 1;">
+      <!-- Centered Content -->
+      <div class="container text-center">
+        <h1 style="color: white; font-weight: 700; font-size: 80px;" class="display-4">Learn Guitar from Scratch</h1>
+        <p style="color: white; font-size: 25px;" class="lead">Start your musical journey with our expert-led Guitar Lesson Workshop.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="mofu" class="py-5">
+    <div class="container">
+    <br>
+    <h1 class="text-center mb-5" style="color:white; font-weight: 700; font-size: 60px;">What You Will Learn</h1>
+
+    <!-- Flex wrapper -->
+    <div class="d-flex flex-wrap justify-content-between align-items-start">
+
+      <!-- Carousel -->
+      <div class="mb-4 mb-md-0" style="width: 100%; max-width: 60%;">
+        <div id="mofuCarousel" class="carousel slide" data-ride="carousel">
+          <div class="carousel-inner">
+            <!-- Slide 1 -->
+            <div class="carousel-item active">
+              <div class="d-flex align-items-center justify-content-center" style="height: 50vh;">
+                <div class="text-center w-100">
+                  <img src="Images/BasicChords.png" class="d-block w-75 mb-3 img-fluid rounded mx-auto" alt="Basic Chords">
+                  <h5 class="text-white">Basic Chords</h5>
+                  <p class="text-white">Master major and minor chords to play your favorite songs.</p>
+                </div>
+              </div>
+            </div>
+            <!-- Slide 2 -->
+            <div class="carousel-item">
+              <div class="d-flex align-items-center justify-content-center" style="height: 50vh;">
+                <div class="text-center w-100">
+                  <img src="images/StrummingTech.png" class="d-block w-75 mb-3 img-fluid rounded mx-auto" alt="Strumming Techniques">
+                  <h5 class="text-white">Strumming Techniques</h5>
+                  <p class="text-white">Learn different patterns to add rhythm and dynamics.</p>
+                </div>
+              </div>
+            </div>
+            <!-- Slide 3 -->
+            <div class="carousel-item">
+              <div class="d-flex align-items-center justify-content-center" style="height: 50vh;">
+                <div class="text-center w-100">
+                  <img src="images/PlaySongs.png" class="d-block w-75 mb-3 img-fluid rounded mx-auto" alt="Playing Songs">
+                  <h5 class="text-white">Play Songs</h5>
+                  <p class="text-white">Practice full songs with group sessions and live demos.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Controls -->
+          <a class="carousel-control-prev" href="#mofuCarousel" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="carousel-control-next" href="#mofuCarousel" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+      </div>
+
+      <!-- Incentives box -->
+      <div class="p-4" style="width: 100%; max-width: 38%; background-color: rgb(129, 129, 55); border-radius: 10px;">
+        <h3 class="text-white">Incentives and Benefits</h3>
+        <p class="text-white">This course is perfect for beginners. You'll also get:</p>
+        <ul class="text-white pl-3">
+          <li>Printable chord charts</li>
+          <li>Access to practice groups</li>
+          <li>Weekly Q&A sessions</li>
+          <li>Free guitar accessories every milestone</li>
+          <li>Daily challenges for guitar stamps</li>
+          <li>Take-home learning materials</li>
+          <li>Early bird discount</li>
+          <li>Raffles or giveaways</li>
+          <li>Skill Level Grouping</li>
+          <li>Take-Home Learning Materials</li>
+          <li>Free Starter Kit</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+  <!-- Course Progression -->
+  <section id="progression" class="py-5 bg-light">
+    <div class="container" id="divCourseProg">
+      <h1 class="text-center mb-4" style="font-size: 70px;">Course Week Calendar</h1><br>
+      <div class="row">
+        <!-- Week 1 -->
+        <div class="col-md-4 mb-3">
+          <div style="background-color: rgb(184, 184, 134);" class="card" data-toggle="modal" data-target="#week1Modal">
+            <div class="card-body text-center">
+              <h1 class="card-title">Week 1</h1>
+              <p class="card-text">Introduction to Guitar and Basic Chords</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Week 2 -->
+        <div class="col-md-4 mb-3">
+          <div style="background-color: rgb(212, 212, 125);" class="card" data-toggle="modal" data-target="#week2Modal">
+            <div class="card-body text-center">
+              <h1 class="card-title">Week 2</h1>
+              <p class="card-text">Strumming Patterns and Chord Transitions</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Week 3 -->
+        <div class="col-md-4 mb-3">
+          <div style="background-color: rgb(153, 153, 66);" class="card" data-toggle="modal" data-target="#week3Modal">
+            <div class="card-body text-center">
+              <h1 class="card-title">Week 3</h1>
+              <p class="card-text">Play and Execute Your First Song</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Week 4 -->
+        <div class="col-md-4 mb-3">
+          <div style="background-color: rgb(223, 223, 102);" class="card" data-toggle="modal" data-target="#week4Modal">
+            <div class="card-body text-center">
+              <h1 class="card-title">Week 4</h1>
+              <p class="card-text">Advanced Chords and Rhythms</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Week 5 -->
+        <div class="col-md-4 mb-3">
+          <div style="background-color: rgb(179, 179, 60);" class="card" data-toggle="modal" data-target="#week5Modal">
+            <div class="card-body text-center">
+              <h1 class="card-title">Week 5</h1>
+              <p class="card-text">Mastering Songs and Performance Techniques</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Week 6 -->
+        <div class="col-md-4 mb-3">
+          <div style="background-color: rgb(255, 255, 100);" class="card" data-toggle="modal" data-target="#week6Modal">
+            <div class="card-body text-center">
+              <h1 class="card-title">Week 6</h1>
+              <p class="card-text">Mastering Songs and Performance Techniques</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal for Week 1 -->
+    <div class="modal" id="week1Modal" tabindex="-1" role="dialog" aria-labelledby="week1ModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title" id="week1ModalLabel">Week 1: Introduction to Guitar and Basic Chords</h4>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <ul>
+              <li>Lesson 1: Introduction to the guitar</li>
+              <li>Lesson 2: Basic chord shapes</li>
+              <li>Lesson 3: How to tune your guitar</li>
+              <li>Lesson 4: Simple strumming exercises</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal for Week 2 -->
+    <div class="modal" id="week2Modal" tabindex="-1" role="dialog" aria-labelledby="week2ModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title" id="week2ModalLabel">Week 2: Strumming Patterns and Chord Transitions</h4>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <ul>
+              <li>Lesson 1: Understanding downstrokes and upstrokes</li>
+              <li>Lesson 2: Basic strumming patterns</li>
+              <li>Lesson 3: Chord transition exercises</li>
+              <li>Lesson 4: Playing along with a metronome</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal for Week 3 -->
+    <div class="modal" id="week3Modal" tabindex="-1" role="dialog" aria-labelledby="week3ModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title" id="week3ModalLabel">Week 3: Play Your First Song</h4>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <ul>
+              <li>Lesson 1: Song structure and basic chord progressions</li>
+              <li>Lesson 2: Playing your first song with chord transitions</li>
+              <li>Lesson 3: Adding strumming patterns to your song</li>
+              <li>Lesson 4: Playing along with backing tracks</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal for Week 4 -->
+    <div class="modal" id="week4Modal" tabindex="-1" role="dialog" aria-labelledby="week4ModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title" id="week4ModalLabel">Week 4: Advanced Chords and Rhythms</h4>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <ul>
+              <li>Lesson 1: Barre chords and their applications</li>
+              <li>Lesson 2: Advanced strumming techniques</li>
+              <li>Lesson 3: Understanding syncopation</li>
+              <li>Lesson 4: Playing more complex chord progressions</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal for Week 5 -->
+    <div class="modal" id="week5Modal" tabindex="-1" role="dialog" aria-labelledby="week5ModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title" id="week5ModalLabel">Week 5: Mastering Songs and Performance Techniques</h4>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <ul>
+              <li>Lesson 1: Putting it all together in a song</li>
+              <li>Lesson 2: Performance techniques and stage presence</li>
+              <li>Lesson 3: Playing with other musicians</li>
+              <li>Lesson 4: Preparing for your first performance</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal for Week 6 -->
+    <div class="modal" id="week6Modal" tabindex="-1" role="dialog" aria-labelledby="week6ModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title" id="week6ModalLabel">Week 6: Final Performance and Review</h4>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <ul>
+              <li>Final Performance</li>
+              <li>Recognition and feedback</li>
+              <li>Review of all concepts covered in the course</li>
+              <li>Q&A session</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section style="background-color: rgb(189, 189, 162);" id="faq" class="py-5">
+    <div class="container"><br><br><br><br>
+      <h1 style="font-size: 60px;" class="text-center mb-4">Frequently Asked Questions</h1>
+      <div class="accordion" id="faqAccordion">
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="faqOne">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapseOne" aria-expanded="true" aria-controls="faqCollapseOne">
+              Do I need any prior guitar experience?
+            </button>
+          </h2>
+          <div id="faqCollapseOne" class="accordion-collapse collapse" aria-labelledby="faqOne" data-bs-parent="#faqAccordion">
+            <div class="accordion-body">
+              No prior experience is required! We offer lessons for beginners as well as intermediate and advanced learners.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="faqTwo">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapseTwo" aria-expanded="false" aria-controls="faqCollapseTwo">
+              What do I need to join the workshop?
+            </button>
+          </h2>
+          <div id="faqCollapseTwo" class="accordion-collapse collapse" aria-labelledby="faqTwo" data-bs-parent="#faqAccordion">
+            <div class="accordion-body">
+              All you need is a guitar, a passion to learn, and a commitment to improving your skills!
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="faqThree">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapseThree" aria-expanded="true" aria-controls="faqCollapseThree">
+              Do I need a high-end equiments to learn guitar?
+            </button>
+          </h2>
+          <div id="faqCollapseThree" class="accordion-collapse collapse" aria-labelledby="faqThree" data-bs-parent="#faqAccordion">
+            <div class="accordion-body">
+              No, you don't need high-end equipments and gear to learn guitar.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="faqFour">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapseFour" aria-expanded="false" aria-controls="faqCollapseFour">
+              How long is each session?
+            </button>
+          </h2>
+          <div id="faqCollapseFour" class="accordion-collapse collapse" aria-labelledby="faqFour" data-bs-parent="#faqAccordion">
+            <div class="accordion-body">
+              Each session typically lasts around 60 minutes, which includes theory, practice, and Q&A.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="faqFive">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapseFive" aria-expanded="false" aria-controls="faqCollapseFive">
+              Are online lessons available?
+            </button>
+          </h2>
+          <div id="faqCollapseFive" class="accordion-collapse collapse" aria-labelledby="faqFive" data-bs-parent="#faqAccordion">
+            <div class="accordion-body">
+              Yes! We offer both in-person and online sessions to accommodate different learning preferences.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="faqSix">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapseSix" aria-expanded="false" aria-controls="faqCollapseSix">
+              What styles of music do you teach?
+            </button>
+          </h2>
+          <div id="faqCollapseSix" class="accordion-collapse collapse" aria-labelledby="faqSix" data-bs-parent="#faqAccordion">
+            <div class="accordion-body">
+              We cover a variety of styles including rock, pop, blues, jazz, classical, and more.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="faqSeven">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapseSeven" aria-expanded="false" aria-controls="faqCollapseSeven">
+              Can I get one-on-one coaching?
+            </button>
+          </h2>
+          <div id="faqCollapseSeven" class="accordion-collapse collapse" aria-labelledby="faqSeven" data-bs-parent="#faqAccordion">
+            <div class="accordion-body">
+              Absolutely! We offer private lessons for students who prefer personalized instruction.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div><br><br><br><br>
+  </section>
+
+  <!-- BOFU -->
+  <section id="bofu" class="py-5 bg-dark text-white">
+    <div class="container">
+      <div style="text-align: center;">
+        <img src="Images/TGW Logo white.png" style="height: 200px; width: 200px;">
+      </div><br>
+      <h2 style="color: rgb(255, 255, 255); " class="text-center mb-4">Join the Workshop Today!</h2>
+      <p style="margin-top: -20px;" class="text-center mb-4">Limited slots available. Fill out the form below!</p>
+      <div class="row justify-content-center">
+        <div class="col-md-6">dasd
+          <form id="joinForm">
+            <div class="mb-3">
+              <label for="name" class="form-label">Full Name</label>
+              <input type="text" class="form-control" id="name" placeholder="Your Name" required />
+            </div>
+            <div class="mb-3">
+              <label for="email" class="form-label">Email address</label>
+              <input type="email" class="form-control" id="email" placeholder="name@example.com" required />
+            </div>
+            <div class="mb-3">
+              <label for="phone" class="form-label">Phone Number</label>
+              <input type="text" class="form-control" id="phone" placeholder="Your Phone Number" required />
+            </div>
+            <button type="submit" class="btn btn-primary btn-lg w-100">Enroll now </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="bg-dark text-white text-center py-3">
+    <p>&copy; 2025 Guitar Workshop by Christian Ignacio. All rights reserved.</p>
+  </footer>
+  
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="script.js"></script>
+
+</body>
+</html>
